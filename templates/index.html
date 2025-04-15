@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asha - JobsForHer Assistant</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <h1>Asha Bot 🤖</h1>
+            <p>Your personal career assistant for women</p>
+        </header>
+
+        <div id="chat-window" class="chat-window"></div>
+
+        <div class="input-area">
+            <input type="text" id="user-input" placeholder="Ask about jobs, events, or mentorship...">
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+
+    <script>
+        let sessionId = null;
+
+        document.getElementById('send-button').addEventListener('click', sendMessage);
+        document.getElementById('user-input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') sendMessage();
+        });
+
+        async function sendMessage() {
+            const input = document.getElementById('user-input');
+            const message = input.value.trim();
+            if (!message) return;
+
+            addMessage('user', message);
+            input.value = '';
+
+            try {
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        message: message,
+                        session_id: sessionId
+                    })
+                });
+
+                const data = await response.json();
+                if (!sessionId) sessionId = data.session_id;
+
+                addMessage('bot', data.response);
+
+                if (data.bias_detected) {
+                    document.getElementById('chat-window').lastElementChild.classList.add('bias-alert');
+                }
+            } catch (error) {
+                addMessage('bot', "Sorry, I'm having trouble connecting. Please try again.");
+            }
+        }
+
+        function addMessage(sender, text) {
+            const chatWindow = document.getElementById('chat-window');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            messageDiv.innerHTML = `<div class="bubble">${text}</div>`;
+            chatWindow.appendChild(messageDiv);
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+        }
+    </script>
+</body>
+</html>

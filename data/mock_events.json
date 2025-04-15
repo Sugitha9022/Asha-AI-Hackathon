@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Women in Tech Conference",
+        "date": "2023-11-15",
+        "location": "Virtual",
+        "description": "Annual conference featuring women leaders in technology."
+    },
+    {
+        "name": "Career Reboot Workshop",
+        "date": "2023-12-05",
+        "location": "Mumbai",
+        "description": "For women returning to the workforce after a break."
+    }
+]

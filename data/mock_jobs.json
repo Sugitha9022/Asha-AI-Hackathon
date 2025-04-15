@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Senior Software Engineer",
+        "company": "WomenTech Inc",
+        "location": "Remote",
+        "type": "Full-time",
+        "url": "https://example.com/jobs/123",
+        "description": "Looking for experienced female engineers to join our diverse team."
+    },
+    {
+        "title": "Product Manager",
+        "company": "SheProducts",
+        "location": "Bangalore",
+        "type": "Full-time",
+        "url": "https://example.com/jobs/456",
+        "description": "Lead product development in an inclusive environment."
+    }
+]
