@@ -1,14 +1,32 @@
 [
-    {
-        "name": "Women in Tech Conference",
-        "date": "2023-11-15",
-        "location": "Virtual",
-        "description": "Annual conference featuring women leaders in technology."
-    },
-    {
-        "name": "Career Reboot Workshop",
-        "date": "2023-12-05",
-        "location": "Mumbai",
-        "description": "For women returning to the workforce after a break."
-    }
+  {
+    "name": "Women in AI Conference 2025",
+    "location": "Virtual",
+    "date": "2025-06-15",
+    "description": "A global conference focused on empowering women in AI and machine learning. Join us for insightful talks and networking opportunities."
+  },
+  {
+    "name": "Career Reboot Bootcamp",
+    "location": "Mumbai, India",
+    "date": "2025-05-01",
+    "description": "A bootcamp for women looking to restart their careers in tech. Participate in workshops, resume building, and interview prep."
+  },
+  {
+    "name": "Tech Career Path Webinar",
+    "location": "Online",
+    "date": "2025-04-30",
+    "description": "Join industry leaders for a webinar on navigating career paths in tech. A great opportunity for women to ask questions and get career advice."
+  },
+  {
+    "name": "Networking Meetup for Women in Tech",
+    "location": "San Francisco, USA",
+    "date": "2025-07-10",
+    "description": "An in-person networking event for women in tech to meet mentors, peers, and potential employers. Don't miss out on connecting with like-minded professionals."
+  },
+  {
+    "name": "Women in Leadership Summit",
+    "location": "New York, USA",
+    "date": "2025-05-20",
+    "description": "A summit bringing together women leaders from various industries to discuss career growth, leadership, and empowerment in the workplace."
+  }
 ]

@@ -8,11 +8,91 @@
         "description": "Looking for experienced female engineers to join our diverse team."
     },
     {
-        "title": "Product Manager",
-        "company": "SheProducts",
-        "location": "Bangalore",
+        "title": "AI/ML Research Scientist",
+        "company": "FemAI Tech",
+        "location": "San Francisco, USA",
         "type": "Full-time",
-        "url": "https://example.com/jobs/456",
-        "description": "Lead product development in an inclusive environment."
+        "url": "https://example.com/jobs/789",
+        "description": "Join our team to research cutting-edge AI/ML models and applications."
+    },
+    {
+        "title": "Nurse Practitioner",
+        "company": "CareWomen Health",
+        "location": "Chicago, USA",
+        "type": "Full-time",
+        "url": "https://example.com/jobs/234",
+        "description": "Seeking a compassionate nurse practitioner to join our women-focused health center."
+    },
+    {
+        "title": "Medical Research Assistant",
+        "company": "WomenHealth Research Labs",
+        "location": "London, UK",
+        "type": "Part-time",
+        "url": "https://example.com/jobs/567",
+        "description": "Support clinical trials and medical research with a focus on women's health."
+    },
+    {
+        "title": "Investment Analyst",
+        "company": "FemInvest",
+        "location": "New York, USA",
+        "type": "Full-time",
+        "url": "https://example.com/jobs/345",
+        "description": "Join a team of female-led investment professionals managing diversified portfolios."
+    },
+    {
+        "title": "Financial Advisor",
+        "company": "SheFinance Advisors",
+        "location": "Remote",
+        "type": "Full-time",
+        "url": "https://example.com/jobs/678",
+        "description": "Provide personalized financial advice to women seeking to secure their financial future."
+    },
+    {
+        "title": "Higher Education Administrator",
+        "company": "Women in Academia",
+        "location": "Cambridge, USA",
+        "type": "Full-time",
+        "url": "https://example.com/jobs/901",
+        "description": "Oversee academic programs and lead initiatives to empower women in higher education."
+    },
+    {
+        "title": "STEM Educator",
+        "company": "SheTeaches STEM",
+        "location": "Virtual",
+        "type": "Part-time",
+        "url": "https://example.com/jobs/2345",
+        "description": "Teach STEM subjects online and inspire young women to pursue careers in science and tech."
+    },
+    {
+        "title": "Digital Marketing Manager",
+        "company": "SheBrands",
+        "location": "Berlin, Germany",
+        "type": "Full-time",
+        "url": "https://example.com/jobs/1122",
+        "description": "Lead marketing campaigns for brands focused on women, using digital strategies to reach global audiences."
+    },
+    {
+        "title": "Social Media Strategist",
+        "company": "WomenPower Media",
+        "location": "Remote",
+        "type": "Full-time",
+        "url": "https://example.com/jobs/3344",
+        "description": "Develop social media strategies that empower women entrepreneurs and businesses."
+    },
+    {
+        "title": "Program Coordinator",
+        "company": "WomenRise Foundation",
+        "location": "New York, USA",
+        "type": "Full-time",
+        "url": "https://example.com/jobs/1234",
+        "description": "Manage community outreach programs that support women in underrepresented communities."
+    },
+    {
+        "title": "Fundraising Manager",
+        "company": "Global Women Initiative",
+        "location": "Los Angeles, USA",
+        "type": "Full-time",
+        "url": "https://example.com/jobs/5678",
+        "description": "Lead fundraising campaigns to support global initiatives for women’s rights and education."
     }
 ]

@@ -34,8 +34,7 @@ class BiasHandler:
 
     def get_positive_response(self, bias_type: str) -> str:
         """Get constructive response to biased queries"""
-        return self.positive_responses.get(bias_type,
-                                           "We focus on empowering women in their careers. How can I help you today?")
+        return self.positive_responses.get(bias_type, "We focus on empowering women in their careers. How can I help you today?")
 
 
 def check_for_bias(text: str) -> Tuple[bool, str]:

@@ -1,5 +1,14 @@
 {
-    "How do I restart my career?": "We offer special programs for career re-entry. Ask me about 'returnships'!",
-    "What industries do you work with?": "We partner with companies across tech, finance, healthcare, and more.",
-    "Is this service free for women?": "Yes, all our services are completely free for women job seekers."
+  "How do I restart my career?": "We offer tailored programs for career re-entry, including mentorship and returnships. Just ask me about 'returnships' to get started!",
+  "Can I get career advice specific to my background?": "Absolutely! Asha personalizes guidance based on your skills, interests, and goals. Just tell me a bit about yourself.",
+  "Will you remember what we talked about earlier?": "Yes! Asha stores context securely to give you a smooth, continuous experience. You can always pick up where you left off.",
+  "Can I connect with other women professionals?": "Yes! We integrate with women’s professional networks and communities to help you network, find mentorship, and grow your career.",
+  "Who powers Asha's career advice?": "Asha uses advanced Large Language Models (LLMs) to provide smart, adaptive support customized for women’s unique career paths.",
+  "Is Asha designed for women like me?": "Yes! Asha is built to recognize when you're seeking gender-specific support and mitigates bias to ensure fair, respectful advice.",
+  "Is my personal data safe here?": "Your data is encrypted and protected. We follow strict guardrails to prevent misuse or exposure of sensitive information.",
+  "What security measures are in place?": "We use end-to-end encryption, secure session handling, and privacy-first design to keep your information safe at all times.",
+  "Will Asha improve over time?": "Yes! Asha learns from anonymized patterns (not your personal data) to continuously enhance performance and support quality.",
+  "What if something goes wrong?": "You’ll receive clear feedback if there's a hiccup, and our support team is here to help. You can also report issues directly.",
+  "What industries do you work with?": "We partner with companies across tech, finance, healthcare, and more.",
+  "Is this service free for women?": "Yes, all our services are completely free for women job seekers."
 }
