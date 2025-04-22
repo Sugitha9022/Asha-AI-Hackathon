@@ -1,0 +1,10 @@
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+venv\Scripts\activate     # Windows
+pip install -r requirements.txt
+
+# Install dependencies
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+# Launch the app
+streamlit run streamlit_app.py

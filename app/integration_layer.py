@@ -2,49 +2,23 @@ import requests
 import json
 from pathlib import Path
 from typing import Dict, List, Any
+import os
 
 # Mock data paths
-MOCK_JOBS_PATH = Path("/Users/sugithar/Desktop/asha-bot/data/mock_jobs.json")
-MOCK_EVENTS_PATH = Path("/Users/sugithar/Desktop/asha-bot/data/mock_events.json")
-
+# Ensure absolute mock data paths using os
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+MOCK_JOBS_PATH = Path(os.path.join(BASE_DIR, "../data", "mock_jobs.json"))
+MOCK_EVENTS_PATH = Path(os.path.join(BASE_DIR, "../data", "mock_events.json"))
 
 def get_jobs(filters=None):
-    """Better mock data with domain support"""
-    mock_jobs = [
-        {
-            "title": "Machine Learning Engineer",
-            "company": "WomenTech AI",
-            "location": "Remote",
-            "type": "Full-time",
-            "description": "aiml python tensorflow",
-            "url": "#"
-        },
-        {
-            "title": "AI Research Scientist",
-            "company": "FemTech Research",
-            "location": "Bangalore",
-            "type": "Full-time",
-            "description": "aiml deep learning",
-            "url": "#"
-        }
-    ]
+    """Load mock jobs from external file and apply filters"""
+    if MOCK_JOBS_PATH.exists():
+        with open(MOCK_JOBS_PATH, "r") as f:
+            mock_jobs = json.load(f)
+    else:
+        mock_jobs = []
 
-    if not filters:
-        return mock_jobs
-
-    filtered = []
-    for job in mock_jobs:
-        match = True
-        for key, value in filters.items():
-            if key in job:
-                if str(value).lower() not in str(job[key]).lower():
-                    match = False
-                    break
-        if match:
-            filtered.append(job)
-
-    return filtered
-
+    return apply_filters(mock_jobs, filters or {})
 
 def apply_filters(items: List[Dict], filters: Dict[str, Any]) -> List[Dict]:
     """Enhanced filtering"""
@@ -65,7 +39,6 @@ def apply_filters(items: List[Dict], filters: Dict[str, Any]) -> List[Dict]:
             filtered.append(item)
     return filtered
 
-
 def get_events() -> List[Dict]:
     """Get events from API or mock data"""
     try:
@@ -75,8 +48,11 @@ def get_events() -> List[Dict]:
     except:
         pass
 
-    with open(MOCK_EVENTS_PATH, "r") as f:
-        return json.load(f)
+    try:
+        with open(MOCK_EVENTS_PATH, "r") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return []
 
 
 def get_mentorships() -> List[Dict]:

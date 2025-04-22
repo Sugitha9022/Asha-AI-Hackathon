@@ -1,29 +1,3 @@
-# from app.nlp_engine import process_input
-# from app.dialog_manager import DialogManager
-#
-#
-# def test_queries():
-#     manager = DialogManager()
-#     test_cases = [
-#         "hi",
-#         "data-science jobs",
-#         "python workshop",  # Tests typo handling
-#         "Is this free?",
-#         "contract work",
-#         "How restart career?"
-#     ]
-#
-#     for query in test_cases:
-#         print(f"\nUser: {query}")
-#         intent, entities = process_input(query)
-#         response = manager.generate_response(intent, entities, {"last_user_input": query})
-#         print(f"Asha: {response}")
-#
-#
-# if __name__ == "__main__":
-#     test_queries()
-
-
 from app.nlp_engine import process_input
 from app.dialog_manager import DialogManager
 
@@ -58,10 +32,17 @@ def test_queries():
         "returnships for women",
 
         # FAQ questions
-        "is this service free?",
-        "what industries do you work with?",
-        "do you have python jobs?",
-        "are there remote opportunities?",
+        "How do I restart my career?",
+        "Can I get career advice specific to my background?",
+        "Will you remember what we talked about earlier?",
+        "Can I connect with other women professionals?",
+        "Who powers Asha's career advice?",
+        "Is Asha designed for women like me?",
+        "Is my personal data safe here?",
+        "What security measures are in place?",
+        "Will Asha improve over time?",
+        "What if something goes wrong?",
+        "What industries do you work with?",
 
         # Edge cases
         "wokshops",  # intentional typo
@@ -79,3 +60,4 @@ def test_queries():
 
 if __name__ == "__main__":
     test_queries()
+
